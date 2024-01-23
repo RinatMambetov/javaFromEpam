@@ -1,4 +1,4 @@
-package org.example;
+package org.fraction;
 
 public class FractionData {
     public static int min = -1000;

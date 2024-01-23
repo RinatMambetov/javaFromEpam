@@ -3,28 +3,28 @@ package org.example;
 import java.util.Objects;
 
 public class Fraction {
-    private final int m;
-    private final int n;
+    private final int numerator;
+    private final int denominator;
 
-    public Fraction(int m, int n) {
-        if (n == 0) {
-            throw new IllegalArgumentException("Argument 'n' is 0");
+    public Fraction(int numerator, int denominator) {
+        if (denominator == 0) {
+            throw new IllegalArgumentException("Argument 'denominator' is 0");
         }
-        this.m = m;
-        this.n = n;
+        this.numerator = numerator;
+        this.denominator = denominator;
     }
 
-    public int getM() {
-        return m;
+    public int getNumerator() {
+        return numerator;
     }
 
-    public int getN() {
-        return n;
+    public int getDenominator() {
+        return denominator;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(m, n);
+        return Objects.hash(numerator, denominator);
     }
 
     @Override
@@ -36,14 +36,14 @@ public class Fraction {
             return false;
         }
         Fraction other = (Fraction) obj;
-        return m == other.getM() && n == other.getN();
+        return numerator == other.getNumerator() && denominator == other.getDenominator();
     }
 
     @Override
     public String toString() {
         return "Fraction{" +
-                "m=" + m +
-                ", n=" + n +
+                "m=" + numerator +
+                ", n=" + denominator +
                 '}';
     }
 

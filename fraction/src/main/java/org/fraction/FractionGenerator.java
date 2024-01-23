@@ -1,4 +1,4 @@
-package org.example;
+package org.fraction;
 
 import java.util.ArrayList;
 import java.util.HashSet;

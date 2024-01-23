@@ -1,4 +1,4 @@
-package org.example;
+package org.fraction;
 
 public class FractionUtils {
     private FractionUtils() {
